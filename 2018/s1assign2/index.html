@@ -668,7 +668,11 @@ table {
 <li><a href="#bonus-marks">Bonus Marks</a></li>
 </ul>
 </li>
-<li><a href="#hints-and-pro-tips">Hints and Pro Tips</a></li>
+<li><a href="#hints-and-pro-tips">Hints and Pro Tips</a>
+<ul class="sectlevel2">
+<li><a href="#linking-buttons">Linking Buttons</a></li>
+</ul>
+</li>
 <li><a href="#submission-instructions">Submission Instructions</a></li>
 <li><a href="#marking-guidelines">Marking Guidelines</a>
 <ul class="sectlevel2">
@@ -705,6 +709,9 @@ table {
 <ul>
 <li>
 <p><strong>UPDATE 16 April 2018:</strong> There was an issue in the template where user interaction was disabled on the first two rows of buttons. This has now been corrected. For more information, see the following forum thread: <a href="https://forum.cgscomputing.com/t/bug-in-it-assignment-and-potentially-template/312" class="bare">https://forum.cgscomputing.com/t/bug-in-it-assignment-and-potentially-template/312</a></p>
+</li>
+<li>
+<p><strong>UPDATE 14 May 2018:</strong> Added a hint on how to connect multiple buttons to one <code>@IBAction</code>, see the following forum thread: <a href="https://forum.cgscomputing.com/t/assignment-hint-linking-multiple-buttons-to-one-ibaction/329" class="bare">https://forum.cgscomputing.com/t/assignment-hint-linking-multiple-buttons-to-one-ibaction/329</a></p>
 </li>
 </ul>
 </div>
@@ -850,6 +857,28 @@ Your browser does not support the video tag.
 <p>Additionally, you must ensure that you have sufficient whitespace and that your code is indented to assist with readability.</p>
 </li>
 </ul>
+</div>
+<div class="sect2">
+<h3 id="linking-buttons"><a class="link" href="#linking-buttons">Linking Buttons</a></h3>
+<div class="paragraph">
+<p>One of the first things that you might realise you need to achieve in the assignment is linking your buttons to the code with actions. You will need to link all of the buttons that are contained in the tic tac toe grid to your code. One way you might think of doing this is to link up 9 different <code>@IBActions</code>, but there is a better way.</p>
+</div>
+<div class="paragraph">
+<p>You can link multiple buttons to one <code>@IBAction</code> by dragging other buttons on top of the existing action.</p>
+</div>
+<div class="paragraph">
+<p>The problem then is how you figure out which button is being pressed inside the action. You may notice that there is a sender parameter in the <code>@IBAction</code>, when creating the action, we can change the type of this from <code>Any</code> to <code>UIButton</code>. After you have done this, you have access to the button that was pressed, through the sender argument.</p>
+</div>
+<div class="paragraph">
+<p>This is demonstrated in this video:</p>
+</div>
+<div class="videoblock">
+<div class="content">
+<video src="./button-demo.mp4" width="800" controls>
+Your browser does not support the video tag.
+</video>
+</div>
+</div>
 </div>
 </div>
 </div>
