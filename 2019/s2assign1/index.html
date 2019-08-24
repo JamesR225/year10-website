@@ -697,7 +697,14 @@ table {
 <h2 id="changelog"><a class="link" href="#changelog">Changelog</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This assignment was last updated on <strong>Saturday 10 August 2019</strong>.</p>
+<p>This assignment was last updated on <strong>Saturday 24 August 2019</strong>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>UPDATE 24 AUGUST:</strong> The bug described below about dismissing a modal has a solution which you will cover in class. It&#8217;s related to where you call <code>.sheet</code> to present the modal (moving the call outside the main NavigationView seems to fix the problem). However, the method to dismiss on the Save button has changed from Beta 5 to Beta 6. In Beta 5 you could use <code>self.presentationMode.value.dismiss()</code> (with the appropriate <code>@Environment(\.presentationMode) var presentationMode</code> variable) but in Beta 6 you need to use <code>self.presentationMode.wrappedValue.dismiss()</code>. Note, you may write your assignment using either Beta 5 or Beta 6 - we don&#8217;t mind.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>If any further changes are made to the assignment they will be itemised here for ease of identification.</p>
@@ -784,7 +791,7 @@ Your browser does not support the video tag.
 <div class="ulist">
 <ul>
 <li>
-<p>Due to a bug in SwiftUI, dismissing the Add New Task modal sheet does not work when the "Save" button is tapped. You should tap the "Save" button to save the task, and then swipe down to dismiss the modal sheet. If this is fixed in a future Xcode and SwiftUI beta then this assignment will be updated accordingly.</p>
+<p>Due to a bug in SwiftUI, dismissing the Add New Task modal sheet does not work when the "Save" button is tapped. You should tap the "Save" button to save the task, and then swipe down to dismiss the modal sheet. If this is fixed in a future Xcode and SwiftUI beta then this assignment will be updated accordingly. <strong>UPDATE, bug addressed - see update on 24 August</strong></p>
 </li>
 <li>
 <p>You should pre-load your app with three or four to do list items, with some being completed and some being incomplete - as this will make it easier for your teacher to test and mark.</p>
@@ -830,7 +837,7 @@ Your browser does not support the video tag.
 <div class="content">
 <pre class="highlight"><code>Image(systemName: "xmark.rectangle.fill")
 	.imageScale(.large)
-	.foregroundColor(.red)</code></pre>
+	.foregroundColor(.green)</code></pre>
 </div>
 </div>
 </li>
