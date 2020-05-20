@@ -700,7 +700,7 @@ table {
 <h2 id="changelog"><a class="link" href="#changelog">Changelog</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This assignment was last updated on <strong>Wednesday 13 May 2020</strong>.</p>
+<p>This assignment was last updated on <strong>Wednesday 20 May 2020</strong>.</p>
 </div>
 <div class="paragraph">
 <p>If any changes are made to the assignment they will be itemised here for ease of identification.</p>
@@ -708,7 +708,10 @@ table {
 <div class="ulist">
 <ul>
 <li>
-<p>The binaries are now zipped with the password <code>cgscomputing.com</code>. This is to prevent issues when downloading the files on the school network, as the firewall was blocking them due to misdetection as malicious files.</p>
+<p><strong>UPDATE 20 MAY:</strong> A student brought to my attention that there are certain situations in SerialKey2 when the keygen cannot generate a valid serial key for a given name, due to the system used to determine the serial key. In these situations, the keygen should return <code>NULL</code>.</p>
+</li>
+<li>
+<p><strong>UPDATE 12 MAY:</strong> The binaries are now zipped with the password <code>cgscomputing.com</code>. This is to prevent issues when downloading the files on the school network, as the firewall was blocking them due to misdetection as malicious files.</p>
 </li>
 </ul>
 </div>
@@ -828,6 +831,9 @@ table {
 </li>
 <li>
 <p>The keygen should be written as a self-contained function, which takes the name as a string parameter and returns a string which is a valid serial number.</p>
+</li>
+<li>
+<p><strong>UPDATE:</strong> There are certain situation when the keygen cannot generate a valid serial key for a given name. In these situations, the keygen should return <code>NULL</code>.</p>
 </li>
 </ul>
 </div>
